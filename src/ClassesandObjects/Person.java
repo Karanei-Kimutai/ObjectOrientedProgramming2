@@ -6,6 +6,7 @@ public class Person {
     private int ID;
 
     //Constructor
+    //Constructors are fundamental in creating objects and are used to initialize attributes
     public Person(String name,int ID){
         this.name=name;
         this.ID=ID;
