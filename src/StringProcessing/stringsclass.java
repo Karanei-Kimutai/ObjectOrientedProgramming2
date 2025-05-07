@@ -1,6 +1,20 @@
 package StringProcessing;
 
 public class stringsclass {
+
+    public static boolean palindromeCheck(String string){
+        int start=0;
+        int end=string.length()-1;
+
+        while(start<end){
+            if(string.charAt(start)!=string.charAt(end)){
+                return false;
+            }
+            start++;
+            end--;
+        }
+        return true;
+    }
     public static void main(String[] args){
         //Strings are objects of the String class, they can be created in two ways, using constructors or the shorthand method
         String name="Karanei";
@@ -24,6 +38,24 @@ public class stringsclass {
         //String Concatenation: Strings can be joined together using the + operator
         System.out.println(name+" "+name2);
 
+
+        //Stringbuilders- a more efficient way to manipulate strings without creating new objects each time
+        StringBuilder stringbuilder1=new StringBuilder("Karanei");
+        stringbuilder1.append(" Kimutai");
+        stringbuilder1.reverse();
+        stringbuilder1.reverse();
+        stringbuilder1.insert(0,"Michael ");
+        String outputFromStringbuilder=stringbuilder1.toString();
+        System.out.println(outputFromStringbuilder);
+
+        StringBuilder stringbuilder2=new StringBuilder("John\n");
+        stringbuilder2.append("Joy\n");
+        stringbuilder2.append("Jane\n");
+        System.out.println(stringbuilder2.toString());
+
+
+        //Checking if a string is a palindrome
+        System.out.println(palindromeCheck("mom"));
     }
 
 }
