@@ -1,5 +1,5 @@
 package Libraries;
-import sampleLibraryPackage.sampleLibraryClass;
+
 /*
 Libraries are collections of pre-written classes, interfaces and methods that provide reusable code for common programming tasks
 Libraries offer solutions for tasks like file handling, data structures, networking, graphics, database connections etc
@@ -24,8 +24,6 @@ public class Libraries {
     public static void displayName(String name){
         System.out.println(name);
     }
-    public static void main(String[] args){
-      sampleLibraryClass.displayName("Karanei");
-    }
+
 
 }
