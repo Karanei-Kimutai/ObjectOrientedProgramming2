@@ -15,6 +15,17 @@ public class stringsclass {
         }
         return true;
     }
+
+    public static boolean isPalindrome(String sampleString){
+        StringBuilder stringBuilder2=new StringBuilder(sampleString);
+        if(stringBuilder2.reverse().toString().equals(sampleString)){
+            return true;
+        }
+        else{
+            return false;
+        }
+
+    }
     public static void main(String[] args){
         //Strings are objects of the String class, they can be created in two ways, using constructors or the shorthand method
         String name="Karanei";
@@ -56,6 +67,7 @@ public class stringsclass {
 
         //Checking if a string is a palindrome
         System.out.println(palindromeCheck("mom"));
+        System.out.println(isPalindrome("mom"));
     }
 
 }
