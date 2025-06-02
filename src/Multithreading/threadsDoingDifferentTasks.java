@@ -43,7 +43,7 @@ public class threadsDoingDifferentTasks {
 
 
         /*
-       //Thread with method vs thread with the code instead
+       //Thread with method vs thread with the code instead-Thread with method is faster
         threadThree thirdThread=new threadThree();
         long startTime3=System.nanoTime();
         thirdThread.start();
