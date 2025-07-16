@@ -4,6 +4,7 @@ package Multithreading;
 public class threadsDoingDifferentTasks {
     public static void main(String[] args) throws InterruptedException {
         threadOne firstThread=new threadOne();
+
         Thread secondThread=new Thread(new threadTwo());
         /*
         firstThread.setPriority(Thread.MIN_PRIORITY);

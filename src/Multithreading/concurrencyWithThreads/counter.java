@@ -9,7 +9,7 @@ public class counter implements Runnable{
 
     @Override
     public void run(){
-        for (int i = 0; i < 1000; i++){//do in three phases, get sum 334 to 666, 667 to 999 get sum
+        for (int i = 0; i < 1000; i++){
             sharedCounterObject.increment();
         }
         System.out.println(Thread.currentThread().getName()+ " completed");
